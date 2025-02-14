@@ -77,7 +77,7 @@ Before running the application, you need to install a few dependencies:
    ```
 
    This will launch the **Currency Converter** application.
-
+   Aand this is more easier if you run the code in VSCode or PyCharm.
 ---
 
 
