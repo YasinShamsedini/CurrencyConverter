@@ -23,13 +23,25 @@ The UI is sleek and minimal, designed around a **dark theme** for a stylish appe
 1. **Main Page:**
    - Users can **input the amount**, select the **from currency**, and choose the **to currency**.
    - The conversion result is displayed clearly below the input fields.
+ ![Screenshot 1](https://github.com/YasinShamsedini/CurrencyConverter/blob/main/images/mainmaincurrency.JPG)
+
+
+
 
 2. **Manage Currencies (CRUD):**
    - Users can **add, update, or delete exchange rates**.
    - The available exchange rates are displayed in a **Treeview**, making it easy to manage and view the data.
+ ![Screenshot 1](https://github.com/YasinShamsedini/CurrencyConverter/blob/main/images/mainmaincurrency.JPG)
+
+
+
 
 3. **Conversion History Report:**
    - The app generates a **conversion history report**, showing past conversions, including **source and target currencies**, **amounts**, and **converted values**.
+ ![Screenshot 1](https://github.com/YasinShamsedini/CurrencyConverter/blob/main/images/mainmaincurrency.JPG)
+
+
+
 
 **UI Highlights:**
 - **Responsive Design:** The app works well across different screen sizes, though there might be an overflow issue on narrower screens with the conversion history.
