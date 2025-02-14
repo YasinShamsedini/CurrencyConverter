@@ -1,4 +1,3 @@
-البته! در اینجا فایل `setup.md` به طور کامل برای شما آماده شده است:
 
 ```markdown
 # Currency Converter Application Setup Guide
@@ -31,35 +30,23 @@ Before running the application, you need to install a few dependencies:
 
    If you're using a local instance, ensure that it's running on `.\SQLEXPRESS`.
 
+
+
+
+
+
+
 ### 4. **Create the Database and Tables:**
 
-   After setting up SQL Server, you need to create the **CurrencyConverter** database and the required table(s). You can run the following SQL script in SQL Server Management Studio (SSMS) or using another SQL query tool:
+   After setting up SQL Server, you need to create the **CurrencyConverter** database and the required table(s). insert the SQL code in a SSMS -> New-Query SQL and make the database ready to run the Software.
 
-   ```sql
-   -- Create Database
-   CREATE DATABASE CurrencyConverter;
-   USE CurrencyConverter;
-
-   -- Create ExchangeRates Table
-   CREATE TABLE ExchangeRates (
-       ID INT PRIMARY KEY IDENTITY(1,1),
-       CurrencyCode NVARCHAR(3) NOT NULL,
-       Rate DECIMAL(18, 6) NOT NULL,
-       LastUpdated DATETIME DEFAULT GETDATE()
-   );
-
-   -- Insert Sample Data
-   INSERT INTO ExchangeRates (CurrencyCode, Rate) VALUES
-   ('USD', 1.0),
-   ('EUR', 0.94),
-   ('GBP', 0.81),
-   ('JPY', 146.45),
-   ('CAD', 1.35);
-   ```
-
-   This script will:
+   SQL code will:
    - Create a `CurrencyConverter` database.
    - Create an `ExchangeRates` table with sample currency rates for USD, EUR, GBP, JPY, and CAD.
+
+
+
+
 
 ### 5. **Configure Database Connection:**
 
@@ -78,6 +65,9 @@ Before running the application, you need to install a few dependencies:
    - Make sure the `SERVER` is correct (e.g., `.\SQLEXPRESS` if you're using SQL Server Express locally).
    - If you're using a different SQL Server version or instance, modify the `SERVER` and `Authentication` accordingly.
 
+
+
+
 ### 6. **Run the Application:**
 
    To start the application, navigate to the directory where the Python script is located and run the following command:
@@ -89,6 +79,8 @@ Before running the application, you need to install a few dependencies:
    This will launch the **Currency Converter** application.
 
 ---
+
+
 
 ## Using the Application
 
@@ -121,26 +113,11 @@ Before running the application, you need to install a few dependencies:
 
 - **Database Errors:**  
   If you see errors related to database queries (e.g., `pyodbc.Error`), ensure that the database is correctly set up and that the `ExchangeRates` table contains valid data.
-
+  
+- **Image Errors:**  
+  If you see errors related to image_path, you can delete the part that uploade the image or download the image on your computer and then, replace thet image address base on its location on your computer.
 ---
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
----
-
-### توضیحات:
-
-- **مقدمه:** فایل راه‌اندازی شامل مقدمه‌ای کوتاه در مورد پروژه و وابستگی‌های آن است.
-- **پیش‌نیازها:** گام به گام توضیح داده شده که کاربر باید چه کتابخانه‌ها و نرم‌افزارهایی را نصب کند.
-- **نحوه نصب SQL Server:** در صورتی که SQL Server نصب نباشد، لینک دانلود و نحوه نصب آن توضیح داده شده است.
-- **ایجاد پایگاه داده:** دستور SQL برای ایجاد پایگاه داده و جداول مورد نیاز در این بخش قرار گرفته است.
-- **تنظیمات اتصال به پایگاه داده:** نحوه تنظیم رشته اتصال به پایگاه داده (SQL Server) توضیح داده شده است.
-- **اجرای برنامه:** نحوه اجرای برنامه از طریق ترمینال توضیح داده شده است.
-- **استفاده از برنامه:** توضیحاتی در مورد نحوه استفاده از برنامه، از جمله بخش‌های مبدل ارز، مدیریت ارزها (CRUD)، و گزارش‌ها.
-- **رفع اشکالات:** بخش‌هایی برای حل مشکلات رایج در ارتباط با پایگاه داده و نصب کتابخانه‌ها.
-
-این فایل تمام اطلاعات مورد نیاز برای راه‌اندازی و استفاده از پروژه را در اختیار کاربران قرار می‌دهد.
